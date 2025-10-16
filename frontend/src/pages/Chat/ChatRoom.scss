@@ -1,0 +1,109 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    font-family: jua, sans-serif;
+    position: relative;
+
+    &::before {
+        content: '';
+        background-image: url(../../assets/image/background.jpeg);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        width: 100vw;
+        inset: 0;
+        filter: blur(6px);
+        z-index: 0;
+    }
+
+    header,
+    footer {
+        z-index: 2;
+    }
+
+    header {
+        height: 77px;
+        width: 100%;
+        background-color: #ffffff27;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 0 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        .user-profile-pic {
+            aspect-ratio: 1;
+            width: 55px;
+            background: #0B3067;
+            border-radius: 100%;
+            flex-shrink: 0;
+        }
+
+        .grp-details {
+
+            .grp-name {
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                color: white;
+                letter-spacing: 2px;
+            }
+
+            .grp-activity {
+                font-size: 0.9rem;
+                letter-spacing: 1px;
+                color: #231c1c75;
+            }
+        }
+    }
+
+    .message-container {
+        height: 100vh;
+        width: 100vw;
+        padding: 0 10px;
+        position: relative;
+        overflow: scroll;
+        z-index: 1;
+
+    }
+
+    footer {
+        background-color: #d8d8d864;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 5px 20px;
+        backdrop-filter: blur(3px);
+
+        input {
+            width: 100%;
+            height: 50px;
+            border-radius: 40px;
+            padding: 0 15px;
+            background: #F2F2F2;
+        }
+
+        button {
+            aspect-ratio: 1;
+            height: 50px;
+            background-color: #7BD5EE;
+            border-radius: 100%;
+            cursor: pointer;
+
+            &:active{
+                scale: 0.9;
+            }
+
+            &:hover{
+                background-color: #64cdeb ;
+            }
+        }
+    }
+}

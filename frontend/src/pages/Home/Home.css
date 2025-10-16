@@ -1,0 +1,60 @@
+.home-container {
+  width: 100vw;
+  height: 100vh;
+  font-family: jua, sans-serif;
+}
+.home-container .bg-image {
+  height: 100%;
+  width: 100%;
+  letter-spacing: 1px;
+  background-image: url("../../assets/image/background.jpeg");
+  background-position: center;
+  background-size: cover;
+  padding: 20px 0;
+}
+.home-container .bg-image .heading {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.home-container .bg-image form {
+  background-color: rgba(255, 252, 252, 0.2117647059);
+  width: 75%;
+  min-width: 230px;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 40px;
+  border: 1px solid white;
+  filter: drop-shadow(0 0 5px white);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.home-container .bg-image form .name-input {
+  display: flex;
+  flex-direction: column;
+}
+.home-container .bg-image form .profilePicUrl-input {
+  display: flex;
+  flex-direction: column;
+}
+.home-container .bg-image form label {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.home-container .bg-image form input {
+  padding: 10px;
+  background-color: rgba(255, 249, 249, 0.4392156863);
+  border-radius: 8px;
+  border: 1px solid #fff;
+  filter: drop-shadow(0 0 3 rgba(255, 255, 255, 0.1450980392));
+}
+.home-container .bg-image form button {
+  padding: 10px;
+  width: 100%;
+  background-color: rgba(0, 255, 55, 0.5215686275);
+  border-radius: 8px;
+  border: 1px solid #00FF37;
+  filter: drop-shadow(0 0 3px #00FF37);
+}

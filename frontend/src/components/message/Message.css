@@ -1,0 +1,38 @@
+.message {
+  padding-top: 200px;
+  display: flex;
+  gap: 10px;
+}
+.message .left-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+.message .left-part img {
+  height: 50px;
+  aspect-ratio: 1;
+  background-color: #D9D9D9;
+  border-radius: 100%;
+}
+.message .left-part .time {
+  color: black;
+  opacity: 50%;
+  font-size: 0.6rem;
+}
+.message .receiver-message {
+  background-color: #37DAFF;
+  border-radius: 20px 0px 20px 20px;
+}
+.message .sender-message {
+  background-color: #fff;
+  border-radius: 0px 20px 20px 20px;
+}
+.message .right-part {
+  margin-top: 35px;
+  padding: 9px;
+  font-size: 1rem;
+  max-width: 70vw;
+}

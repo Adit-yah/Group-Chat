@@ -1,0 +1,75 @@
+.home-container {
+    width: 100vw;
+    height: 100vh;
+    font-family: jua, sans-serif;
+
+    .bg-image {
+        height: 100%;
+        width: 100%;
+        letter-spacing: 1px;
+        background-image: url('../../assets/image/background.jpeg');
+        background-position: center;
+        background-size: cover;
+        padding: 20px 0;
+
+        .heading {
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        form {
+
+            background-color:#FFFCFC36;
+            width: 75%;
+            min-width: 230px;
+            max-width: 400px;
+            margin:  20px auto  ;
+            padding: 20px;
+            border-radius: 40px;
+            border: 1px solid white;
+            filter: drop-shadow(0 0 5px white);
+            display: flex;
+            flex-direction: column;
+            gap: 20px ;
+
+
+
+            .name-input {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .profilePicUrl-input {
+                display: flex;
+                flex-direction: column;
+            }
+
+            label {
+                font-size: 1em;
+                text-transform: uppercase;
+            }
+
+            input {
+                padding: 10px;
+                background-color: #fff9f970;
+                border-radius: 8px;
+                border: 1px solid #fff;
+                filter: drop-shadow(0 0 3 #ffffff25)
+            }
+
+            button {
+                padding: 10px;
+                width: 100%;
+
+                background-color: #00FF3785;
+                border-radius: 8px;
+                border: 1px solid #00FF37;
+                filter: drop-shadow(0 0 3px #00FF37)
+            }
+        }
+    }
+}
+
+
+
