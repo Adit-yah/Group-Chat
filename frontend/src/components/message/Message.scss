@@ -1,5 +1,4 @@
 .message {
-    padding-top: 200px;
     display: flex;
     gap: 10px;
 
@@ -27,21 +26,29 @@
     }
 
     //MESSAGE CONTENT 
-    .receiver-message {
-        background-color: #37DAFF;
-        border-radius: 20px 0px 20px 20px;
 
-    }
-
-    .sender-message {
-        background-color: #fff;
-        border-radius: 0px 20px 20px 20px;
-    }
 
     .right-part {
-        margin-top: 35px;
-        padding: 9px;
-        font-size: 1rem;
-        max-width: 70vw;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .receiver-message {
+            background-color: #37DAFF;
+            border-radius: 20px 0px 20px 20px;
+
+        }
+
+        .sender-message {
+            background-color: #fff;
+            border-radius: 0px 20px 20px 20px;
+        }
+
+        .message {
+            padding: 9px;
+            font-size: 1rem;
+            max-width: 70vw;
+        }
     }
 }

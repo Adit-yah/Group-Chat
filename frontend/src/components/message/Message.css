@@ -1,5 +1,4 @@
 .message {
-  padding-top: 200px;
   display: flex;
   gap: 10px;
 }
@@ -22,16 +21,21 @@
   opacity: 50%;
   font-size: 0.6rem;
 }
-.message .receiver-message {
+.message .right-part {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.message .right-part .receiver-message {
   background-color: #37DAFF;
   border-radius: 20px 0px 20px 20px;
 }
-.message .sender-message {
+.message .right-part .sender-message {
   background-color: #fff;
   border-radius: 0px 20px 20px 20px;
 }
-.message .right-part {
-  margin-top: 35px;
+.message .right-part .message {
   padding: 9px;
   font-size: 1rem;
   max-width: 70vw;
