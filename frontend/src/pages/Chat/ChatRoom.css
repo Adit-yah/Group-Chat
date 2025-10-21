@@ -11,6 +11,7 @@
   background-size: cover;
   position: absolute;
   width: 100vw;
+  height: 100vh;
   inset: 0;
   filter: blur(6px);
   z-index: 0;
