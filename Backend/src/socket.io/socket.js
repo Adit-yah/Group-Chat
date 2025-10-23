@@ -1,8 +1,11 @@
 import { Server } from "socket.io";
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 export async function setUpSocket (httpServer ) {
     const io = new Server(httpServer , {cors : {
-        origin : '*'
+        origin : process.env.FRONTEND_URL
     }})
 
     //WHEN USER CONNECT
