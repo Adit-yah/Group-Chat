@@ -12,7 +12,7 @@ const SocketProvider = ({ children }) => {
 
     clearLocalStorage()
     // console.log('clear local storage')
-    WS.current = io("http://localhost:3000");
+    WS.current = io("https://group-chat-backend-rwca.onrender.com");
 
     WS.current.on('connect' , ()=>{
       console.log('i am running')
