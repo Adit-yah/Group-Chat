@@ -23,11 +23,11 @@
 .container header {
   height: 77px;
   width: 100%;
-  background-color: rgba(111, 203, 234, 0.537254902);
+  background-color: rgba(60, 166, 201, 0.537254902);
   display: flex;
   gap: 10px;
-  align-items: center;
-  padding: 0 10px;
+  align-items: start;
+  padding: 10px;
   position: fixed;
   top: 0;
   left: 0;
@@ -37,13 +37,15 @@
 .container header .user-profile-pic {
   aspect-ratio: 1;
   width: 55px;
-  background: #0B3067;
+  background-image: url("https://imgs.search.brave.com/G9jhgGbb8eycRLojc8Xuc7HUmiz1B3bSZZv7y1K7r-k/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzg3Lzhm/LzI0Lzg3OGYyNDk0/ZDlmNzM5NDQ0OWI3/YTA4MGM2YWM4YTcy/LmpwZw");
+  background-position: center;
+  background-size: cover;
   border-radius: 100%;
   flex-shrink: 0;
 }
 .container header .grp-details .grp-name {
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: white;
   letter-spacing: 2px;
 }

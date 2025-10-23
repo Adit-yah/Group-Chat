@@ -1,12 +1,23 @@
-import React from 'react'
+import React, { useEffectEvent } from 'react'
 import { useEffect , useState } from 'react'
 import { Navigate, Outlet } from 'react-router-dom'
 import { getData } from '../../hooks/localstorage'
 
 const Protected = () => {
    
- const userData= getData('userData')
- console.log(userData);
+ const [isUserExist, setIsUserExist] = useState(false)
+
+ const userData = getData('userData')
+
+ const setExistence = useEffectEvent(()=>{
+   !isUserExist ?   setIsUserExist(true) : ''
+ })
+
+ useEffect(()=>{
+    if(!userData) return
+    setExistence()
+ } , [userData])
+
  
  
  if(!userData) return <Navigate to={'/home'}  replace/>

@@ -10,7 +10,7 @@ const SocketProvider = ({ children }) => {
   const groupId = 'My_group_id'
   useEffect(() => {
 
-    // clearLocalStorage()
+    clearLocalStorage()
     // console.log('clear local storage')
     WS.current = io("http://localhost:3000");
 
@@ -30,8 +30,8 @@ const SocketProvider = ({ children }) => {
     WS.current.disconnect();
 
     // Optional: Also remove specific listeners to prevent memory leaks, though disconnect() should handle this
-    // socket.off('connect');
-    // socket.off('disconnect');
+    WS.current.off('connect');
+    WS.current.off('disconnect');
   };
 
   }, []);

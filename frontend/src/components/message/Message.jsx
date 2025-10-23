@@ -1,6 +1,6 @@
 import "./Message.css";
 
-const Message = ({ profilePicUrl , sender , message , name}) => {
+const Message = ({ profilePicUrl , sender , message , name , time}) => {
     
   return (
     <div 
@@ -9,7 +9,7 @@ const Message = ({ profilePicUrl , sender , message , name}) => {
     >
       <div className="left-part">
         <img src={profilePicUrl} />
-        <div className="time">HH : HH</div>
+        <div className="time">{time}</div>
       </div>
       <div className='right-part'>
         <h1 style={{ alignSelf : sender ? 'start' : 'end'}}>{name}</h1>
